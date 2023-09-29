@@ -252,19 +252,7 @@ visitors_with_nations <- visitors %>%
       TRUE ~ "England"
     ))
   visitors_with_nations %>% 
-      filter(nation == "England") %>%
-      count()
-  visitors_with_nations %>% 
-      filter(nation == "Scotand") %>%
-      count()
-  visitors_with_nations %>% 
-      filter(nation == "Northern Ireland")%>%
-      count()
-  visitors_with_nations %>% 
-      filter(nation == "Wales") %>%
-      count()
-      
-      
+      count(nation)
 ```
 
 
